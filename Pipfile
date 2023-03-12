@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+transformers = "*"
+sentence-transformers = "*"
+huggingface = "*"
+spacy = "*"
+bert-extractive-summarizer = "*"
+negate = "*"
+streamlit = "*"
+en-coreference-web-trf = {file = "https://github.com/explosion/spacy-experimental/releases/download/v0.6.1/en_coreference_web_trf-3.4.0a2-py3-none-any.whl"}
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3.10"
