@@ -6,6 +6,8 @@ Test your knowledge. Generate true or false questions from any text.
 
 **Output**: The output will be an automatically generated True or False sentence, with true sentences coming directly from the block of text and false sentences generated using **masking** or **negation** techniques.
 
+![ezgif com-optimize](https://github.com/IzicTemi/tf_qgen/assets/19413520/4a4646a6-1cdf-4703-91ac-f9573522ba7b)
+
 ## Approach
 
 1. **Coreference Resolution (optional)**
