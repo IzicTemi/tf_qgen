@@ -31,16 +31,16 @@ For False question generation. One of the following two methods is used at rando
     
       The steps involved in this are as follows:
     
-      1. Identify noun phrases in the sentence and replace each word in phrase with [MASK].
-      This generates multiple sentences with different nounphrases masked.
+      1. Identify noun phrases in the sentence and replace each word in the phrase with [MASK].
+      This generates multiple sentences with different noun phrases masked.
       2. The masked sentence is fed into the MLM which predicts the words to replace the mask.
       This generates up to 5 possible False sentences.
-      3. Using cosine similarity, the 5 sentences are compared with the original sentence and the
-      least similar is retuned. This involves generating embeddings for all sentences using a
+      3. Using cosine similarity, the 5 sentences are compared with the original sentence, and the
+      least similar is returned. This involves generating embeddings for all sentences using a
       sentence transformer model from sentence-transformers library.  
 
 ## Pseudocode
-```python
+```
 Get input_text
 if resolve_coreference:
 resolved_text =resolve coreference(input_text)
